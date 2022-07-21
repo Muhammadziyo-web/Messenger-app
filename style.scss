@@ -1,0 +1,253 @@
+%flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background: rgb(134, 153, 167);
+    background: linear-gradient(0deg, rgba(134, 153, 167, 1) 0%, rgba(134, 153, 167, 0.36738445378151263) 100%);
+    @extend%flex;
+
+}
+
+.content {
+    width: 400px;
+    height: 530px;
+    background-color: #fff;
+}
+
+.header {
+    @extend%flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(132, 146, 209);
+
+    &-wrapper {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 0 20px;
+
+
+        h1 {
+            color: #fff;
+            text-transform: uppercase;
+            font-size: 20px;
+            font-weight: 600;
+            display: inline-block;
+
+        }
+    }
+}
+
+.span {
+    display: inline-block;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: rgb(255, 255, 255);
+    margin-right: 14px;
+
+}
+
+.close {
+    margin-right: 25px;
+    width: 26px;
+    opacity: .6;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+
+    &-hr {
+        width: 100%;
+        height: 2px;
+        background: #000;
+        opacity: 0.2;
+    }
+
+    &-p {
+        display: inline-block;
+        box-sizing: content-box;
+        padding: 7px;
+        text-transform: uppercase;
+        font-size: 13px;
+        color: rgba(0, 0, 0, 0.205);
+        text-align: center;
+        background-color: #fff;
+        position: absolute;
+        font-weight: 600;
+
+    }
+}
+
+.today {
+    margin-top: 30px;
+    @extend%flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.massage1 {
+    margin-top: 30px;
+
+    &-p1 {
+        opacity: .4;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    &-p2 {
+        background: rgba(117, 161, 179, 0.295);
+        clip-path: polygon(5% 9%, 2% 0, 100% 0, 100% 75%, 50% 75%, 5% 75%);
+        height: 70px;
+        width: 250px;
+        padding-left: 20px;
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 7px;
+        border-radius: 0px 5px 5px 5px;
+        margin-left: -13px;
+
+    }
+}
+
+.massage2 {
+    margin-top: 20px;
+    float: right;
+
+    &-p1 {
+        opacity: .4;
+        font-size: 13px;
+        font-weight: 600;
+        float: right;
+        margin-top: -20px;
+    }
+
+    &-p2 {
+        background: rgba(126, 196, 153, 0.288);
+        clip-path: polygon(94% 0, 92% 11%, 92% 100%, 0 100%, 0 0);
+        height: 60px;
+        width: 300px;
+        padding-left: 10px;
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 10px;
+        border-radius: 0px 5px 5px 5px;
+        margin-right: -25px;
+
+    }
+}
+
+.massage3 {
+    margin-top: 100px;
+
+    &-p1 {
+        opacity: .4;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    &-p2 {
+        background: rgba(117, 161, 179, 0.295);
+        clip-path: polygon(5% 9%, 2% 0, 100% 0, 100% 75%, 50% 75%, 5% 75%);
+        height: 50px;
+        width: 90px;
+        padding-left: 15px;
+        font-size: 13px;
+        line-height: 20px;
+        padding-top: 7px;
+        border-radius: 0px 5px 5px 5px;
+        margin-left: -5px;
+
+    }
+}
+
+.massage4 {
+    margin-left: 177px;
+
+    &-p1 {
+        opacity: .4;
+        font-size: 13px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    &-p2 {
+        display: inline-block;
+        padding: 9px 7px;
+        background: rgba(235, 84, 84, 0.452);
+        box-sizing: content-box;
+        font-size: 13px;
+        line-height: 20px;
+        border-radius: 0px 5px 5px 5px;
+        margin-left: -5px;
+
+    }
+}
+
+.hr2 {
+    background: #000;
+    opacity: .2;
+    width: 100%;
+    height: 2px;
+    margin-top: 15px;
+}
+
+.input {
+    margin-top: 25px;
+    border: none;
+    opacity: .7;
+    font-size: 14px;
+    width: 280px;
+
+}
+
+.input:focus-within {
+    outline: none;
+}
+
+.input:placeholder-shown {
+    color: #000;
+    opacity: 1;
+}
+
+.send {
+    background: none;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: rgba(81, 110, 206, 0.747);
+    float: right;
+    margin-top: 25px;
+    margin-right: 9px;
+}
+
+.send:active {
+    color: #fff;
+    background: rgba(81, 110, 206, 0.747);
+    box-sizing: content-box;
+    padding: 5px 9px;
+    border-radius: 3px;
+    margin-top: 20px;
+    margin-right: 0;
+}
